@@ -120,6 +120,11 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
+/* .about-col-2 p a{
+    text-decoration: none;
+    color: #b54769;
+} */
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -383,4 +388,49 @@ form btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+
+/* -------------css for small screens------------- */
+
+nav .bx{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(/images/phone-background.png);
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .bx{
+        display: block;
+        font-size: 25px
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .bx{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }
