@@ -8,40 +8,182 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-
-    <!-- header design -->
-    <div class="header">
-        <a href="#" class="logo">Chakitg.</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <!-- <a href="#">Services</a> -->
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="bx bx-moon" id="darkmode"></div>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>C</span>hakitg.</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Hi, I am</p>
+                <h1><span>Chakit</span> Gupta<br>a Web Developer</h1>
+            </div>
+        </div>
     </div>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, I am</h3>
-            <h1>Chakit Gupta</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam reiciendis, consectetur quaerat tenetur cum ipsam officiis.</p>
-            
-            <div class="social">
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bx-bar-chart-alt-2' ></i></a>
-                <a href="#"><i class='bx bx-star' ></i></a>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello! My name is Chakit and I enjoy creating things that live on the internet. My
+                        interest in web development started back in 2018 when I decided to try editing custom
+                        blog templates — turns out setting up the UI with different elements taught me a lot
+                        about HTML &amp; CSS!</p> <br>
+
+                    <p>Fast-forward to today, I’ve had the privilege of working at <br> - <a href="https://paytm.com/"> an international payments platform </a>, <br> - <a href="https://www.uncue.beauty/">a competitive brand of fitness giants</a>,<br> - <a href="https://digitalnextworld.com/"> and a corporation of multiple clients</a>.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>Web App Developement</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Competitive Programmer</span><br>Solving Problems with Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 23 - Current </span><br>SDET Intern @ Paytm</li>
+                            <li><span>July - Dec 22</span><br>Fullstack Developer Intern @ Uncue</li>
+                            <li><span>Feb - July 22</span><br>Software Engineering Intern @ DNT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech. - 92%</span><br>B.Tech. ECE from GGSIPU, 2023</li>
+                            <li><span>XII - 86%</span><br>Kendriya Vidyalaya, CBSE - 2018</li>
+                            <li><span>X - 9 CGPA</span><br>Kendriya Vidyalaya, CBSE - 2016</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <a href="#" class="btn" >Download CV</a>
         </div>
-    </section>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- -----------services------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum facere sint, voluptatem eos consectetur?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bx-palette' ></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum facere sint, voluptatem eos consectetur?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bx-game' ></i>
+                    <h2>Game Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum facere sint, voluptatem eos consectetur?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------portfolio------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------------contact-------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>chakitg1@gmail.com</p>
+                    <p>+91 8076446044</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/chakitg/"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/chakitg"><i class='bx bxl-github' ></i></a>
+                        <a href="https://auth.geeksforgeeks.org/user/chakitg/practice"><i class='bx bx-bar-chart-alt-2' ></i></a>
+                        <a href="#"><i class='bx bx-star' ></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 </body>
 </html>
