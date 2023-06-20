@@ -37,7 +37,7 @@
                     <img src="images/user.png" alt="user image">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
                     <p> Hello! My name is Chakit and I enjoy creating things that live on the internet. My
                         interest in web development started back in 2018 when I decided to try editing custom
                         blog templates — turns out setting up the UI with different elements taught me a lot
@@ -46,29 +46,29 @@
                     <p>Fast-forward to today, I’ve had the privilege of working at <br> - <a href="https://paytm.com/"> an international payments platform </a>, <br> - <a href="https://www.uncue.beauty/">a competitive brand of fitness giants</a>,<br> - <a href="https://digitalnextworld.com/"> and a corporation of multiple clients</a>.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-content active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Web Developement</span><br>Web App Developement</li>
                             <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                             <li><span>Competitive Programmer</span><br>Solving Problems with Algorithms</li>
                         </ul>
                     </div>
-                    <div class="tab-content" id="experience">
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Jan 23 - Current </span><br>SDET Intern @ Paytm</li>
                             <li><span>July - Dec 22</span><br>Fullstack Developer Intern @ Uncue</li>
                             <li><span>Feb - July 22</span><br>Software Engineering Intern @ DNT</li>
                         </ul>
                     </div>
-                    <div class="tab-content" id="education">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>B.Tech. - 92%</span><br>B.Tech. ECE from GGSIPU, 2023</li>
-                            <li><span>XII - 80%</span><br>Kendriya Vidyalaya, CBSE</li>
-                            <li><span>X - 9 CGPA</span><br>Kendriya Vidyalaya, CBSE</li>
+                            <li><span>XII - 86%</span><br>Kendriya Vidyalaya, CBSE - 2018</li>
+                            <li><span>X - 9 CGPA</span><br>Kendriya Vidyalaya, CBSE - 2016</li>
                         </ul>
                     </div>
                 </div>
@@ -76,6 +76,85 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- -----------services------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum facere sint, voluptatem eos consectetur?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bx-palette' ></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum facere sint, voluptatem eos consectetur?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bx-game' ></i>
+                    <h2>Game Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum facere sint, voluptatem eos consectetur?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------portfolio------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 </body>
 </html>
