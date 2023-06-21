@@ -3,8 +3,7 @@
 
 > https://chakitg.github.io/my-website/
 
-![GitHub stars](https://img.shields.io/github/stars/chakitg/chakitg.github.io) 
-![GitHub forks](https://img.shields.io/github/forks//chakitg/chakitg.github.io)
+
 [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com//chakitg/chakitg.github.io/)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://chakitg.github.io/)
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/chakit-gupta/)
