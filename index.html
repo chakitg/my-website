@@ -13,15 +13,15 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo"><span>C</span>hakitg.</a>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
-                    <i class='bx bx-x' ></i>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
                 </ul>
-                <i class='bx bx-menu'></i>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Hi, I am</p>
@@ -190,6 +190,18 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
     </script>
 </body>
 </html>
