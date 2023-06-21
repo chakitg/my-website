@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -22,6 +26,7 @@ body::-webkit-scrollbar{
     background: url(images/background.png);
     background-size: cover;
     background-position: centre;
+    background-attachment: fixed;
 }
 
 .container{
@@ -396,7 +401,7 @@ nav .bx{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-device-width: 600px){
     #header{
         background-image: url(/images/phone-background.png);
     }
