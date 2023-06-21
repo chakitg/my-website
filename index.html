@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo"><span>C</span>hakitg.</a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
                 </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Hi, I am</p>
@@ -43,7 +45,7 @@
                         blog templates — turns out setting up the UI with different elements taught me a lot
                         about HTML &amp; CSS!</p> <br>
 
-                    <p>Fast-forward to today, I’ve had the privilege of working at <br> - <a href="https://paytm.com/"> an international payments platform </a>, <br> - <a href="https://www.uncue.beauty/">a competitive brand of fitness giants</a>,<br> - <a href="https://digitalnextworld.com/"> and a corporation of multiple clients</a>.</p>
+                    <!-- <p>Fast-forward to today, I’ve had the privilege of working at <br> - <a href="https://paytm.com/"> an international payments platform - Paytm</a>, <br> - <a href="https://www.uncue.beauty/">a competitive brand of fitness giants</a>,<br> - <a href="https://digitalnextworld.com/"> and a corporation of multiple clients</a>.</p> -->
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -78,7 +80,7 @@
 
     <!-- -----------services------------ -->
 
-    <div id="services">
+    <!-- <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -102,7 +104,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- ---------------portfolio------------- -->
@@ -147,24 +149,28 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p>chakitg1@gmail.com</p>
-                    <p>+91 8076446044</p>
+                    <p><i class='bx bx-paper-plane'></i> chakitg1@gmail.com</p>
+                    <p><i class='bx bx-phone'></i> +91 8076446044</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/chakitg/"><i class='bx bxl-linkedin'></i></a>
                         <a href="https://github.com/chakitg"><i class='bx bxl-github' ></i></a>
                         <a href="https://auth.geeksforgeeks.org/user/chakitg/practice"><i class='bx bx-bar-chart-alt-2' ></i></a>
                         <a href="#"><i class='bx bx-star' ></i></a>
                     </div>
+                    <a href="/images/resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="email" name="Email" placeholder="Your Email">
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class='bx bx-copyright'></i> 2023 Chakitg. All Rights Reserved.</p>
         </div>
     </div>
 
@@ -184,6 +190,18 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
     </script>
 </body>
 </html>
